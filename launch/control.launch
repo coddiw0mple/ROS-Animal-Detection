@@ -1,0 +1,9 @@
+<launch>
+    <node 
+        name="control" 
+        pkg="ros_project" 
+        type="controller.py" 
+        args="$(env WSL_HOST_IP)" 
+        output="screen" 
+    />
+</launch>

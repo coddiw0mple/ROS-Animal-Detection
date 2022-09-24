@@ -1,0 +1,15 @@
+<launch>
+    <node 
+        name="image_pub" 
+        pkg="ros_project" 
+        type="publisher.py" 
+        args="$(env WSL_HOST_IP)" output="screen" 
+    />
+    <node 
+        name="image_sub" 
+        pkg="ros_project" 
+        type="subscriber.py" 
+        output="screen" 
+    />
+</launch>
+
